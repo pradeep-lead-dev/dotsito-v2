@@ -1,0 +1,142 @@
+
+/* Base container styling */
+.service-container {
+  padding: 4rem 2rem;
+  background-color: #010023; /* Dotsito's logo theme color */
+  color: white;
+  text-align: center;
+}
+
+/* Headline styling */
+.headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fruit grid styling */
+.fruit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.fruit-item {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better card distinction */
+}
+
+.fruit-item:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Feature icon styling */
+.fruit-item i {
+  font-size: 2.5rem;
+  color: #010023;
+  margin-bottom: 1rem;
+}
+
+.fruit-item p {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* CTA Button styling */
+.cta-button {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-btn {
+  background-color: #5486eb;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0044cc;
+}
+
+/* Responsive Design */
+
+/* For Large Laptops and Desktops (1200px+) */
+@media (min-width: 1200px) {
+  .fruit-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+  }
+}
+
+/* For Laptops and Tablets (Between 992px and 1200px) */
+@media (max-width: 1200px) {
+  .fruit-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns for medium laptops/tablets */
+  }
+}
+
+/* For Tablets and Small Laptops (Between 576px and 992px) */
+@media (max-width: 992px) {
+  .fruit-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns for tablets */
+  }
+  
+  .headline {
+    font-size: 2rem; /* Adjust headline size */
+  }
+
+  .fruit-item {
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .cta-btn {
+    font-size: 1rem; /* Adjust button size */
+  }
+}
+
+/* For Mobile Devices (Phones and Small Screens, 576px and below) */
+@media (max-width: 576px) {
+  .fruit-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .headline {
+    font-size: 1.8rem; /* Adjust headline size for mobile */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Adjust subtitle size for mobile */
+    margin-bottom: 2rem;
+  }
+
+  .fruit-item {
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem; /* Add margin between fruit items for mobile */
+  }
+
+  .cta-btn {
+    width: 100%; /* Full width button on mobile */
+    padding: 0.6rem 1.5rem;
+  }}

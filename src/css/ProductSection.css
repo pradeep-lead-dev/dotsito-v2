@@ -1,0 +1,562 @@
+.solution-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.product-card {
+  border: 3px solid #1f0707;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Limit max width */
+}
+
+.product-card h3 {
+  margin: 0 0 10px;
+  font-size: 2em;
+}
+
+.product-card p {
+  margin: 0 0 15px;
+  font-size: 1.5em;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.product-card:hover::before {
+  border: 3px solid #3498db; /* Blue border on hover */
+}
+
+
+
+
+.full-content-section {
+  margin-top: 40px;
+  padding: 75px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fefefe85;
+  align-items: center;
+  align-content: center;
+}
+
+.full-content-section h2 {
+  margin-bottom: 10px;
+  font-size:1.8em;
+  text-transform: uppercase;
+}
+ .full-content-section h3 {
+  margin-bottom: 10px;
+  font-size:1.5em;
+  text-align: center !important;
+}
+.full-content-section h4 {
+  margin-bottom: 10px;
+  font-size:1.3em;
+}
+.full-content-section p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+/* Image styling */
+.name-image, .stack-image, .technical-image, .section-image, .why-org-image {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.name-image,
+.technical-image,
+.why-org-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 50%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .product-card {
+    width: 90%; /* Makes the product card take up more space on smaller screens */
+  }
+
+  .full-content-section {
+    padding: 10px;
+  }
+  .full-content-section h3 {
+    text-align: center !important;
+  }
+
+  .navigation-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .productpara {
+    display: none; /* Hide product content on mobile */
+  }
+
+  .product-card h3 {
+    font-size: 1.5em;
+    text-align: center; /* Adjust font size for mobile */
+    justify-content: center;
+  }
+
+  .product-card {
+    max-width: 100%; /* Make sure the card takes full width on mobile */
+  }
+
+
+  .product-card button {
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+}
+
+/* Further adjustments for mobile phones */
+@media screen and (max-width: 480px) {
+  .product-card {
+    width: 100%; /* Full width on smaller mobile screens */
+    padding: 15px;
+  }
+
+  .name-image,
+  .technical-image,
+  .why-org-image {
+    max-width: 100%; /* Make images take the full width of their containers */
+  }
+
+  .navigation-buttons {
+    flex-direction: column; /* Stack the buttons vertically on smaller screens */
+    gap: 5px;
+  }
+
+  .navigation-buttons button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+/* Default styling for the bullet point paragraph */
+.bullet-point-paragraph {
+  position: relative;
+  padding-left: 20px; /* Default padding for larger screens */
+}
+
+.bullet-point-paragraph::before {
+  content: '\25CB'; /* Unicode for a bullet point */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 15px; /* Default size for bullet point */
+  color: #007bff; /* Bullet point color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .bullet-point-paragraph {
+    padding-left: 15px; /* Decrease padding on smaller screens */
+  }
+
+  .bullet-point-paragraph::before {
+    font-size: 16px; /* Reduce bullet size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bullet-point-paragraph {
+    padding-left: 10px; /* Further decrease padding on very small screens */
+  }
+
+  .bullet-point-paragraph::before {
+    font-size: 14px; /* Reduce bullet size even more for very small screens */
+  }
+}
+.productpara{
+  color: black;
+}
+/* Dotspot Features Section */
+.dotspot-features {
+  padding: 1rem;
+  
+}
+
+.features__title {
+  text-align: center;
+  font-size: 0.8em ;
+  margin-bottom: 2rem;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 50vh ;
+  aspect-ratio: 4 / 4; /* Ensures consistent aspect ratio */
+  border-radius: 20px;
+}
+
+.feature-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the card while maintaining aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+/* Title of the feature on top of the image */
+.feature-card__title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+}
+
+.feature-card__title {
+ margin-bottom: 0;
+  color: #fff;
+  font-size: 0.9em !important;
+  text-align: center;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay content for details */
+.feature-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card__details {
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.feature-card:hover .feature-card__title-container {
+  opacity: 0; /* Hide title container on hover */
+  box-shadow: 0 8px 16px rgba(57, 52, 198, 0.942);
+
+}
+.feature-card:hover{
+  box-shadow: 0 8px 16px rgba(57, 52, 198, 0.942);
+
+}
+.feature-card:hover .feature-card__overlay {
+  opacity: 1; /* Show overlay details on hover */
+}
+
+.feature-card:hover .feature-card__img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(57, 52, 198, 0.942);
+
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1024px) {
+  .feature-card {
+    aspect-ratio: 4 / 3; /* Maintain a similar ratio for larger screens */
+  }
+}
+
+/* For medium-sized screens (tablets, large phones) */
+@media (max-width: 768px) {
+  .features__title {
+    font-size: 1.6rem;
+  }
+
+  .feature-card__title {
+    font-size: 1.4rem;
+  }
+
+  .feature-card__details {
+    font-size: 0.7rem !important;
+  }
+
+  .feature-card {
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio on medium screens */
+  }
+}
+
+/* For small devices (phones) */
+@media (max-width: 480px) {
+  .features__grid{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .features__title {
+    font-size: 1.4rem;
+  }
+
+  .feature-card__title {
+    font-size: 1.2rem;
+  }
+
+  .feature-card__details {
+    font-size: 0.9rem !important;
+  }
+
+  .feature-card {
+    aspect-ratio: 1 / 1 !important; /* Make it square for very small screens */
+  }
+}
+
+/* Section Title */
+.why-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 2.5rem;
+  padding: 1rem;
+}
+
+/* Card Styles */
+.why-card {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 8px 16px rgba(57, 52, 198, 0.942);
+}
+
+/* Image inside card */
+.why-card__img {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Header and content */
+.why-card__header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.why-card__content {
+  font-size: 1rem;
+  color: #292929;
+  text-align: justify;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr; /* 1 card per row for smaller screens */
+  }
+
+  .why-card {
+    padding: 1rem;
+  }
+
+  .why-card__img {
+    height: 200px;
+  }
+
+  .why-card__header {
+    font-size: 1.2rem;
+  }
+
+  .why-card__content {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* General styling for technical details */
+.technical-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+/* Left side content */
+.technical-details__content {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f0707 !important;
+}
+.technical-details__content  p{
+ 
+  color: #1f0707 !important;
+}
+
+/* Right side video */
+.technical-details__video {
+  flex: 1;
+  max-width: 600px;
+  height: 350px;
+}
+
+/* Video iframe styling to make it responsive */
+.technical-details__video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .technical-details {
+    flex-direction: column;
+  }
+
+  .technical-details__video {
+    height: 300px; /* Adjust video height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .technical-details {
+    flex-direction: column;
+  }
+
+  .technical-details__video {
+    height: 250px; /* Further adjust video height for smaller screens */
+  }
+
+  .technical-details__content {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .technical-details__video {
+    height: 200px; /* Further adjust for mobile screens */
+  }
+
+  .technical-details__content {
+    font-size: 0.85rem;
+  }
+}

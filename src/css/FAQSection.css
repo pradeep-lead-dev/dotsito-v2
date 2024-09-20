@@ -1,0 +1,143 @@
+
+
+.faq {
+  padding: 40px;
+  background-color: #fcfcfc !important;
+}
+
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.faq-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.faq-right {
+  width: 55%;
+}
+
+.faq-title {
+  font-size: 28px;
+  color: #101828;
+  margin-bottom: 15px;
+}
+
+.faq-btn {
+  background-color: #010023;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-link {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.faq-right .ant-collapse-header {
+  font-weight: bold;
+  font-size: 16px;
+  color: #101828;
+}
+
+.ant-collapse {
+  background-color: white;
+  border: none;
+}
+
+.ant-collapse-item {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.ant-collapse-header {
+  padding: 15px 20px;
+}
+
+.ant-collapse-content-box {
+  padding: 0 20px 15px;
+}
+
+/* Hover effects for buttons */
+.faq-btn:hover {
+  background-color: #e63946;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .faq-left,
+  .faq-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .faq-left {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .faq-link {
+    font-size: 12px;
+  }
+
+  .ant-collapse-header {
+    font-size: 14px;
+  }
+
+  .ant-collapse-content-box {
+    padding: 0 15px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 20px;
+  }
+
+  .faq-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .faq-link {
+    font-size: 10px;
+  }
+
+  .ant-collapse-header {
+    font-size: 12px;
+  }
+
+  .ant-collapse-content-box {
+    padding: 0 10px 8px;
+  }
+}
+.faq-section p{
+  color: #010023;
+}

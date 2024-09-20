@@ -1,0 +1,59 @@
+
+.ant-modal {
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .ant-modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  /* Input Field Styling */
+  .ant-form-item-label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .ant-input,
+  .ant-select-selector {
+    border-radius: 6px;
+  }
+  
+  /* Submit Button */
+  .ant-btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Footer Text */
+  h3 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .ant-modal {
+      width: 90% !important;
+      margin: 0 auto;
+    }
+  
+    .ant-btn {
+      margin-top: 10px;
+    }
+  }
+  

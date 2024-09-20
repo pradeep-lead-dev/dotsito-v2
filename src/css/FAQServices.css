@@ -1,0 +1,36 @@
+.faq-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #010023;
+  }
+  
+  .faq-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .faq-left {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .faq-right {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .faq-btn, .faq-link {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-section {
+      flex-direction: column;
+    }
+    .faq-left, .faq-right {
+      max-width: 100%;
+    }
+  }
+  

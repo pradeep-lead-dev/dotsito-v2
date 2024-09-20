@@ -1,0 +1,166 @@
+/* General Navbar Styles */
+.navbar-container {
+  background-color: rgba(20, 20, 20, 0.6);
+  padding: 0.8rem 2rem;
+  position: sticky !important;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(100, 96, 96, 0.425);
+  z-index: 1000; 
+  backdrop-filter: blur(10px); /* Adds the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 2px solid rgb(40,89,168);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  margin-right: 10px;
+}
+a{
+  text-decoration: none !important;
+}
+.navbar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.ant-menu-link,
+.ant-dropdown-link {
+  margin-right: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+.ant-menu-link:hover,
+.ant-dropdown-link:hover {
+ 
+  text-decoration: none;
+}
+
+/* Dropdown Styles */
+.split-dropdown-content {
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.split-dropdown-content .left-side {
+  flex: 1;
+}
+
+.split-dropdown-content .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0.7;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.split-dropdown-content .right-side img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.dropdown-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #060606;
+}
+
+/* Mobile Styles */
+.menu-mobile {
+  display: none;
+}
+
+.ant-drawer-link {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide the desktop menu on small screens */
+  }
+
+  .menu-mobile {
+    display: block; /* Display hamburger icon */
+    font-size:0rem;
+    color: #000000;
+    top: 0 !important;
+  }
+
+  /* Ensure the drawer menu has sufficient padding for mobile screens */
+  .ant-drawer-body {
+    padding: 20px;
+  }
+
+  .ant-drawer-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust drawer link styles for mobile */
+  .ant-drawer-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: #000000;
+  }
+
+  
+  /* Mobile-friendly dropdown styles */
+  .split-dropdown-content {
+    flex-direction: column; /* Stack dropdown content vertically */
+    padding: 15px;
+  }
+
+  .split-dropdown-content .right-side {
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  .split-dropdown-content .right-side img {
+    width: 80px;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .navbar-title {
+    font-size: 1rem;
+  }
+
+  .navbar-logo img {
+    width: 200px;
+    height: 35px;
+  }
+}
