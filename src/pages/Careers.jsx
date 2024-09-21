@@ -130,9 +130,7 @@ const Careers = () => {
     <Title level={1} className="banner-title">
       Find your Best Careers
     </Title>
-    <Text className="banner-text">
-      Be a part of a dynamic and innovative team that is shaping the future of technology.
-    </Text>
+   
     <br />
     <div className="search-bar">
   <form onSubmit={(e) => { e.preventDefault(); handleFilterChange('search', e.target.search.value); }}>

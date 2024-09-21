@@ -53,7 +53,7 @@ const ApplyForm = ({ formVisible, setFormVisible }) => {
             <Option value="manager">Manager</Option>
           </Select>
         </Form.Item>
-        <h3>Please email your detailed resume to operation@dotsito.com. We will be in touch soon!</h3>
+        <h5>Please email your detailed resume to operation@dotsito.com. We will be in touch soon!</h5>
 
         <div style={{ textAlign: 'right' }}>
           <Button type="primary" htmlType="submit">Submit</Button>

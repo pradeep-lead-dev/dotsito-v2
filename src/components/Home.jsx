@@ -37,8 +37,11 @@ function Home() {
             </Text>
             <br />
             <Button type="primary" size="large" className="btn btn-darken">
-              Our Products <i className="bx bx-right-arrow-alt"></i>
-            </Button>
+  <a href="/product" style={{ color: 'inherit', textDecoration: 'none' }}>
+    Our Products <i className="bx bx-right-arrow-alt"></i>
+  </a>
+</Button>
+
           </div>
         </div>
       </section>

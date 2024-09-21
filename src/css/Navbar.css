@@ -10,6 +10,33 @@
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border-bottom: 2px solid rgb(40,89,168);
 }
+/* Style for the dropdown arrow icon in the drawer */
+.ant-drawer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+
+.sub-menu {
+  padding-left: 20px;
+  display: flex;
+  color: #000000 !important;
+  flex-direction: column;
+}
+
+
 
 .navbar {
   display: flex;

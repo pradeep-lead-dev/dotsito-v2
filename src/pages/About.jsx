@@ -109,19 +109,14 @@ const About = () => {
           Your browser does not support the video tag.
         </video>
         <div className="banner-content">
-  <h1 className="banner-title">
-    Empowering Your Business with Dotsito Technology
-  </h1>
-  <p className="banner-text">
-    Discover Dotsito's cutting-edge solutions designed to optimize your operations, enhance efficiency, and drive success across industries.
-  </p>
-  <div className="mt-2">
-    <a href="#contact" className="banner-button">
-      Explore Our Solutions <span>→</span>
-    </a>
-  </div>
-</div>
-
+          <h1 className="banner-title">
+            Empowering Your Business with Dotsito Technology
+          </h1>
+          <p className="banner-text">
+            Discover Dotsito's cutting-edge solutions designed to optimize your
+            operations, enhance efficiency, and drive success across industries.
+          </p>
+        </div>
       </section>
 
       {/* Mission Section */}

@@ -263,6 +263,24 @@ time {
     max-width: 350px;
   }
 }
+@media screen and (max-width: 600px) {
+  .banner-content h1 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      text-align: start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-content p {
+      font-size: 1rem;
+      color: rgb(255, 255, 255);
+      font-weight: bolder;      text-align: start;
+
+  }
+}
+
+
 
 /* Blockquote Section */
 .blockquote-wrapper {

@@ -78,6 +78,7 @@
 
 .contact-info {
   display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 
@@ -121,9 +122,10 @@
 }
 
 .left-content h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 200;
   color: #333;
+  text-align: justify;
   margin-bottom: 20px;
 }
 
@@ -181,4 +183,8 @@
     border-left: none;
     margin-top: 30px;
   }
+  .leadership-card {
+    flex-direction: column;
+    text-align: justify;
+}
 }

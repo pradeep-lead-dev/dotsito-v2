@@ -69,16 +69,13 @@ const Contact = () => {
         </video>
         <div className="banner-content">
           <Title level={1} className="banner-title">Transforming Businesses Through Technology</Title>
-          <Text className="banner-text">Empowering enterprises with cutting-edge technology solutions and innovations.</Text>
-          <div className="mt-2">
-            <a href="#contact" className="banner-button">Let's Talk <span>→</span></a>
-          </div>
+          
         </div>
       </section>
  
       <div className="contact-section">
         {/* Left Section: Contact Information */}
-        <div className="contact-info" data-aos="fade-right">
+        <div className="contact-info mainc" data-aos="fade-right">
           <Title level={3} className="contact-title">
             Connect With Our Experts to Achieve Your Digital Vision
           </Title>

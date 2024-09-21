@@ -305,9 +305,7 @@ const ProductSection = () => {
   <p className="banner-text">
     Discover our cutting-edge solutions designed to optimize your operations, enhance efficiency, and drive success across industries.
   </p>
-  <div className="mt-2">
-    <a href="#contact" className="banner-button">Explore Our Solutions <span>→</span></a>
-  </div>
+ 
 </div>
 
       </section>
@@ -328,7 +326,7 @@ const ProductSection = () => {
 
       {/* New Section to Display Full Content */}
       {activeProduct && (
-        <div className="full-content-section">
+        <div className="full-content-section" id="product-section">
           {/* Display product name and image */}
           <h2>{activeProduct.name}</h2> <br></br>
           <img src={activeProduct.nameImage} alt={`${activeProduct.name} image`} className="name-image" />

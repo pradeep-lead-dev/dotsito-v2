@@ -15,7 +15,9 @@ const HireSection = () => {
         </p>
       </div>
       <div className="hire-button-wrapper">
-        <button className="hire-button">Join us</button>
+        <button className="hire-button"> <a href="/careers" style={{ color: 'inherit', textDecoration: 'none' }}>
+        Join us
+  </a></button>
       </div>
     </div>
     <hr />

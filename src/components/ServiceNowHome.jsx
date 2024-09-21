@@ -44,7 +44,9 @@ const ServiceNowHome = () => {
       </div>
 
       <div className="cta-button">
-        <button className="cta-btn">Learn More...</button>
+        <button className="cta-btn"><a href="/services" style={{ color: 'inherit', textDecoration: 'none' }}>
+        Learn More...<i className="bx bx-right-arrow-alt"></i>
+  </a></button>
       </div>
     </div>
   );

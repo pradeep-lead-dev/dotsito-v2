@@ -4,6 +4,7 @@ import { Typography } from 'antd'; // Import Title and Text from Ant Design
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Modal from "../components/Modal"; // Custom modal component
+import Footer from '../components/Footer'; // Your Footer component
 
 // Import images
 import erp from "../assets/img/enterprice-card.jpg";
@@ -115,11 +116,8 @@ const Services = () => {
           Your browser does not support the video tag.
         </video>
         <div className="banner-content">
-          <Title level={1} className="banner-title">Transforming Businesses Through Technology</Title>
-          <Text className="banner-text">Empowering enterprises with cutting-edge technology solutions and innovations.</Text>
-          <div className="mt-2">
-            <a href="#contact" className="banner-button">Let's Talk <span>→</span></a>
-          </div>
+          <Title level={1} className="banner-title mt-5">Transforming Businesses Through Technology</Title>
+          
         </div>
       </section>
 
@@ -159,6 +157,7 @@ const Services = () => {
         </Modal>
       )}
       <FAQSection/>
+      <Footer/>
     </div>
   );
 };
