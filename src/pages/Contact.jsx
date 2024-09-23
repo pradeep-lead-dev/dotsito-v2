@@ -27,18 +27,16 @@ const Contact = () => {
   // JSON Data for Our Presence
   const locationsData = {
     locations: [
-      {
+      {  
         country: "USA",
         flag: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
         company: "Dotsito Technology Inc.",
-        address: "101 Morgan Lane, Suite # 205, Plainsboro NJ 08536",
-        phone: "+1 609 632 0350"
       },
       {
         country: " UK",
         flag: "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg",
         company: "Dotsito Technology Ltd.",
-        phone: "+44 208 799 2800"
+       
       },
      
       
@@ -206,18 +204,7 @@ const Contact = () => {
         </div>
 
         {/* Office Images from JSON */}
-        <div className="office-images">
-          {locationsData.officeImages.map((image, index) => (
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="office-image"
-              key={index}
-              data-aos="zoom-in"
-              data-aos-delay={`${index * 100}`}
-            />
-          ))}
-        </div>
+       
       </div>
 
       <Footer />

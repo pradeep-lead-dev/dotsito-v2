@@ -24,9 +24,7 @@ const Recruitment = () => {
         <div className="banner-content">
           <Title level={1} className="banner-title">Transforming Businesses Through Technology</Title>
           <Text className="banner-text">Empowering enterprises with cutting-edge technology solutions and innovations.</Text>
-          <div className="mt-2">
-            <a href="#contact" className="banner-button">Let's Talk <span>→</span></a>
-          </div>
+          
         </div>
       </section>
 
